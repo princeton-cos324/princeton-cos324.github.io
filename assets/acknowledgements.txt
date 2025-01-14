@@ -1,0 +1,1 @@
+aiml_image.png: https://commons.wikimedia.org/wiki/File:Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg
