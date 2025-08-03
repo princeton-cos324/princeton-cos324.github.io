@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>PCA Merged (via iframe) - Fixed Horizontal</title>
+  <title>PCA Merged (responsive horizontal)</title>
   <style>
     body {
       margin: 0;
@@ -17,18 +17,31 @@
       display: flex;
       flex-direction: row;
       gap: 20px;
-      width: 100vw;
+      width: 90vw;
+      max-width: 1200px;
       overflow-x: auto;
       padding: 20px;
       box-sizing: border-box;
     }
 
     iframe {
-      flex: 0 0 33.3333%;
+      flex: 1 1 300px;
       min-width: 300px;
+      max-width: 400px;
       height: 600px;
       border: none;
       box-sizing: border-box;
+    }
+
+    /* Stack vertically on small screens */
+    @media (max-width: 1000px) {
+      .container {
+        flex-direction: column;
+      }
+      iframe {
+        max-width: 100%;
+        width: 100%;
+      }
     }
   </style>
 </head>
