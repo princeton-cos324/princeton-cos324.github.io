@@ -2,34 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>PCA Merged (via iframe) - Horizontal Layout</title>
+  <title>PCA Merged (via iframe) - Fixed Horizontal</title>
   <style>
-    /* Center container horizontally, allow vertical scroll */
     body {
       margin: 0;
       min-height: 100vh;
       display: flex;
-      justify-content: center; /* horizontal center */
+      justify-content: center;
       background: #fff;
-      overflow-y: auto; /* allow vertical scrolling */
+      overflow-y: auto;
     }
 
-    /* Container holds iframes in a row */
     .container {
       display: flex;
-      flex-direction: row; /* horizontal layout */
-      gap: 20px; /* spacing between iframes */
-      width: 90vw;
-      max-width: 1200px;
-      margin: 40px 0;
-      overflow-x: auto; /* horizontal scroll if needed */
+      flex-direction: row;
+      gap: 20px;
+      width: 100vw;
+      overflow-x: auto;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     iframe {
-      flex: 1 1 300px; /* grow/shrink, base 300px */
+      flex: 0 0 33.3333%;
+      min-width: 300px;
       height: 600px;
       border: none;
-      min-width: 300px;
+      box-sizing: border-box;
     }
   </style>
 </head>
