@@ -2,40 +2,43 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>PCA Merged (via iframe)</title>
+  <title>PCA Merged (via iframe) - Horizontal Layout</title>
   <style>
-    /* Make body full height and center the container */
+    /* Center container horizontally, allow vertical scroll */
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center; /* horizontal center */
-      align-items: center;    /* vertical center */
-      background: #fff; /* optional background */
+      background: #fff;
+      overflow-y: auto; /* allow vertical scrolling */
     }
-    
-    /* Container to hold the iframes stacked vertically */
+
+    /* Container holds iframes in a row */
     .container {
       display: flex;
-      flex-direction: column;
-      gap: 40px; /* space between iframes */
-      width: 90vw; /* responsive width */
-      max-width: 1200px; /* max width */
+      flex-direction: row; /* horizontal layout */
+      gap: 20px; /* spacing between iframes */
+      width: 90vw;
+      max-width: 1200px;
+      margin: 40px 0;
+      overflow-x: auto; /* horizontal scroll if needed */
     }
-    
+
     iframe {
-      width: 100%;
+      flex: 1 1 300px; /* grow/shrink, base 300px */
       height: 600px;
       border: none;
+      min-width: 300px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <iframe src="centered_points.html"></iframe>
-    <iframe src="pca_plot.html"></iframe>
-    <iframe src="pca_2vectors_with_plane.html"></iframe>
+    <iframe src="centered_points.html" scrolling="yes"></iframe>
+    <iframe src="pca_plot.html" scrolling="yes"></iframe>
+    <iframe src="pca_2vectors_with_plane.html" scrolling="yes"></iframe>
   </div>
 
 </body>
