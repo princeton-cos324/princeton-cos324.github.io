@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>PCA Merged (via iframe)</title>
   <style>
+    /* Make body full height and center the container */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* horizontal center */
+      align-items: center;    /* vertical center */
+      background: #fff; /* optional background */
+    }
+    
+    /* Container to hold the iframes stacked vertically */
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px; /* space between iframes */
+      width: 90vw; /* responsive width */
+      max-width: 1200px; /* max width */
+    }
+    
     iframe {
       width: 100%;
       height: 600px;
       border: none;
-      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
 
-  <h2>Centered Points</h2>
-  <iframe src="centered_points.html"></iframe>
-
-  <h2>PCA Plot</h2>
-  <iframe src="pca_plot.html"></iframe>
-
-  <h2>Two Vectors with Plane</h2>
-  <iframe src="pca_2vectors_with_plane.html"></iframe>
+  <div class="container">
+    <iframe src="centered_points.html"></iframe>
+    <iframe src="pca_plot.html"></iframe>
+    <iframe src="pca_2vectors_with_plane.html"></iframe>
+  </div>
 
 </body>
 </html>
