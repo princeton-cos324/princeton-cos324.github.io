@@ -32,10 +32,16 @@
       margin-bottom: 60px;
     }
 
+    .iframe-container {
+      width: 900px;           /* Match caption width */
+      margin: 0 auto;         /* Center horizontally */
+    }
+
     iframe {
       width: 100%;
       height: 600px;
       border: none;
+      display: block;
     }
 
     .caption {
@@ -55,17 +61,23 @@
   </div>
 
   <div class="plot-wrapper">
-    <iframe src="centered_points.html"></iframe>
+    <div class="iframe-container">
+      <iframe src="centered_points.html"></iframe>
+    </div>
     <div class="caption">(a) Raw data points in 3D space.</div>
   </div>
 
   <div class="plot-wrapper">
-    <iframe src="pca_plot.html"></iframe>
+    <div class="iframe-container">
+      <iframe src="pca_plot.html"></iframe>
+    </div>
     <div class="caption">(b) Principal component directions shown as arrows.</div>
   </div>
 
   <div class="plot-wrapper">
-    <iframe src="pca_2vectors_with_plane.html"></iframe>
+    <div class="iframe-container">
+      <iframe src="pca_2vectors_with_plane.html"></iframe>
+    </div>
     <div class="caption">(c) Data projected onto the plane defined by the top two components.</div>
   </div>
 
