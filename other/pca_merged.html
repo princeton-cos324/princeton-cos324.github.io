@@ -2,38 +2,67 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>PCA Merged (Clean Horizontal)</title>
+  <title>PCA Visualization</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 40px;
+      font-family: sans-serif;
       background: #fff;
-      overflow-x: auto;
-      overflow-y: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      width: max-content; /* only as wide as needed for all iframes */
-      padding: 20px;
-      gap: 20px;
+    .plot-wrapper {
+      width: 90%;
+      max-width: 1000px;
+      margin-bottom: 40px;
+      text-align: center;
     }
 
     iframe {
-      width: 600px;
+      width: 100%;
       height: 600px;
       border: none;
-      flex-shrink: 0; /* prevents iframe from shrinking and overlapping */
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #333;
+      font-style: italic;
+    }
+
+    .main-caption {
+      margin-top: 40px;
+      max-width: 900px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #111;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <div class="plot-wrapper">
     <iframe src="centered_points.html"></iframe>
+    <div class="caption">(a) Raw data points in 3D space.</div>
+  </div>
+
+  <div class="plot-wrapper">
     <iframe src="pca_plot.html"></iframe>
+    <div class="caption">(b) Principal component directions shown as arrows.</div>
+  </div>
+
+  <div class="plot-wrapper">
     <iframe src="pca_2vectors_with_plane.html"></iframe>
+    <div class="caption">(c) Data projected onto the plane defined by the top two components.</div>
+  </div>
+
+  <div class="main-caption">
+    PCA in 3D: Visualizing raw data, principal components, and a 2D projection.
   </div>
 
 </body>
