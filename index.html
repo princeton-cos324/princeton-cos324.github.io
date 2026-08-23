@@ -1,19 +1,19 @@
 <meta charset="utf-8" emacsmode="-*- markdown -*">
 **COS 324: Introduction to Machine Learning**
-	Spring 2026, Princeton University
+	Fall 2026, Princeton University
 <center>
     <!--**Links:** -->
     [Syllabus](./syllabus.html) | 
     [Schedule](./schedule.html) |
     [Office hours](#officehours) | 
     [Course notes](https://princeton-introml.github.io/) | 
-    [Ed](https://edstem.org/us/courses/94047/discussion) |
-    [Ed Resources](https://edstem.org/us/courses/94047/resources) | 
-    [Gradescope](https://www.gradescope.com/courses/1231489)
+    [Ed](https://edstem.org/us/courses/102902/discussion) |
+    [Ed Resources](https://edstem.org/us/courses/102902/resources) | 
+    [Gradescope](https://www.gradescope.com/courses/1347813)
 </center>
 
 ![<small>Generated in [ChatGPT](https://chatgpt.com/) using [DALL·E 3](https://openai.com/index/dall-e-3/)</small>](assets/dalle3_cute_robot.png width="30%" border="2")
-This course provides a broad introduction to different machine learning paradigms and algorithms and lays a foundation for further study or independent work in AIML. Some topics we'll cover include: linear models, support vector machines, neural networks, clustering, principal components analysis, Markov decision processes, planning, and reinforcement learning. The goals of this course are three-fold: to understand the landscape of ML, how to compute the mathematics behind techniques, and how to use Python and relevant libraries to implement and use various methods.
+This course provides a broad introduction to different machine learning paradigms and algorithms and lays a foundation for further study or independent work in AIML. Some topics we'll cover include: linear models, support vector machines, neural networks, clustering, principal components analysis, Markov decision processes, planning, and reinforcement learning. The goals of this course are three-fold: to understand the landscape of ML, how to compute the mathematics behind techniques, and how to implement ML pipelines end-to-end. 
 
 
 <!--Welcome to Markdeep. It's the simple way to write plain text with
@@ -26,42 +26,46 @@ Last updated: Jan 14, 2025.
   - A: Please reach out to Colleen Kenny (ckenny AT cs.princeton.edu).
 
 ## Course staff
-- **Instructors:** Professors [Zhuang Liu](https://liuzhuang13.github.io) and [Vikram Ramaswamy](https://www.cs.princeton.edu/~vr23/)
-- **Graduate teaching assistants (TAs):** [Sofiia Druchyna (head TA)](https://sof0-0.github.io/), Sreemanti Dey, [Xinran Liang](https://xinranliang.github.io/xinranliang/), [Aleksandr Storozhenko](https://aleksandrstorozhenko.github.io), Zhicheng Zheng. 
+- **Instructors:** Professors [Adji Buosso Dieng](https://adjiboussodieng.org) and [Vikram Ramaswamy](https://www.cs.princeton.edu/~vr23/)
+- **Graduate teaching assistants (TAs):** Linrong Cai, Jeffrey Cheng, Anha Khan, Anderson Lee, Taiming Liu, David Yin.
 - **Undergraduate course assistants (UCAs):** TBA **
 
 ## Course details
 
-- **Lectures:** Mondays and Wednesdays, 1:20-2:40pm in Peyton Hall, 145. 
+- **Lectures:** Mondays and Wednesdays, 1:20-2:40pm in **CS 104**. 
 - **Precepts:** Thursdays
-    - P01: 9:35 am – 10:25 am, Friend Center 109 
-    - P03: 10:40 am – 11:30 am, Friend Center 005
-    - P04: 12:15 pm – 1:05 pm, Sherrerd Hall 001
-    - P05: 1:20 pm – 2:10 pm, Fine Hall 214
-    - P07: 3:30 pm – 4:20 pm, Friend Cen 009
-- **Assignments:** due Wednesdays at 12:30pm unless otherwise noted.
-- **Midterm exam:** Wednesday, March 4, 1:20-2:40pm.
-- **Final exam:** Wednesday, May 13, 12:30-3:30pm.
+    - P01: 9:35 am – 10:25 am, Sherrard Hall 001 
+    - P02: 10:40 am – 11:30 am, Sherrard Hall 001
+    - P03: 12:15 pm – 1:05 pm,  Sherrard Hall 001
+    - P04: 1:20 pm – 2:10 pm, Friend Cen 111
+    - P06: 3:30 pm – 4:20 pm, Friend Cen 109
+- **Assignments:** See schedule for all dates. 
+	- Written Homework (HWs): 
+		- HW submission: Due Tuesdays 10:00pm unless otherwise noted.
+		- Reflections: Due Sundays 10:00 pm unless otherwise noted. 
+		- Quizzes: In class on Mondays
+	- Programming labs (Labs): Due on Tuesdays 10:00 pm. 
+- **Midterm exam:** Wednesday, Oct 14, 1:20-2:40pm.
+- **Final exam:** Sunday, Dec 20, 4:00 - 7:00pm.
 
 ## Getting started
 - Register for COS 324 in [TigerHub](https://registrar.princeton.edu/tigerhub). 
-	- Official registration is needed for access to most course components (iClicker, [Adroit cluster](https://researchcomputing.princeton.edu/systems/cloud-computing/gpus-classes), Ed, Gradescope, etc.)
-- Read our course [syllabus](https://tinyurl.com/cos324s26).
+	- Official registration is needed for access to most course components (iClicker, Ed, Gradescope, etc.)
+- Read our course [syllabus](https://tinyurl.com/cos324f26-syl).
 	- Consider if further preparation would be helpful for you. If so, plan to go through the relevant pre-work resources in the syllabus **ASAP** (e.g. before the course picks up).
-- Accept invitations to join [Ed](https://edstem.org/us/courses/94047/) and [iClicker](https://www.iclicker.com/students/).
+- Accept invitations to join [Ed]() and [iClicker](https://www.iclicker.com/students/).
 - Read week 1 readings (see [full schedule](./schedule.html) for assigned readings).
-- Attend lecture, starting Mon, Jan 26.
-- Attend your assigned precept, starting Thu, Jan 29.
+- Attend lecture, starting Wed, Sep 2.
+- Attend your assigned precept, starting Thu, Sep 3.
 
 ## Where do I find X? / How do I do X?
-- **Course policies:** see our [syllabus](https://tinyurl.com/cos324s26).
+- **Course policies:** see our [syllabus](https://tinyurl.com/cos324f26-syl).
 - **Assigned readings:** see our [full schedule](./schedule.html).
-- **Course materials (e.g. lecture slides, precept material, past exams, etc.):** see [Ed Resources](https://edstem.org/us/courses/94047/resources) (click the "Download" icon in the upper right-hand corner).
+- **Course materials (e.g. lecture slides, precept material, past exams, etc.):** see [Ed Resources](https://edstem.org/us/courses/102902/resources) (click the "Download" icon in the upper right-hand corner).
 	- **Note:** We've uploaded recent, in-person exams; previous versions of COS 324 may have covered different topics. 
-- **To access the Adroit cluster (for precept/PAs):** see our [technical guide](./tech_guide.html) for instructions on logging onto to Adroit, copying course materials to your home directory, etc.
-- **To turn in an assignment:** use [Gradescope](https://www.gradescope.com/courses/1231489) to submit both HWs and PAs. 
-	- **Note:** For PAs, you must submit both an .ipynb file and a .pdf of your notebook.
-- **Communicate with course staff:** use [Ed Discussion](https://edstem.org/us/courses/94047/discussion) to communicate with us.
+- **To turn in an assignment:** use [Gradescope](https://www.gradescope.com/courses/1347813) to submit both HWs and Labs. 
+	- **Note:** Reflections should be submitted as a google form. 
+- **Communicate with course staff:** use [Ed Discussion](https://edstem.org/us/courses/102902/discussion) to communicate with us.
     - If you need to include a dean, email us at cos324-staff AT lists.cs.princeton.edu.
     - **Note:** Course staff will not reply to individual emails.
 
@@ -72,22 +76,8 @@ For detailed list of topics and assigned readings, see our [full schedule](./sch
 
 <iframe src="https://tinyurl.com/cos324s26schedule"></iframe>
 
-## Office hours / Problem solving sessions 
-
-Check the calendar and Ed for the most up-to-date information. Changes to sessions made less than 48-hours in advance will be posted on Ed.
-
-We offer a variety of sessions to best support different kinds of student questions.
-
-- Concept OHs: conceptual questions only (e.g. lecture material): Usually held by lecturer for the week
-- Problem solving sessions (Grad TAs): conceptual questions + assignment support
-- Problem solving sessions (UCAs): assignment support only, held by undergraduate lab TAs
-
-**Note:** UCA OHs will start by week 3.
-
-### Office hour signup
-Each written assignment will be graded entirely on participation and completion, thus, you must sign up for and attend at least one 2-hour OH session where you
-will work on the assignment. For each session in the calendar, there is a google form link to sign up for the session. 
-
+## Office hours 
+TBD
 
 ### Office hours calendar
 
